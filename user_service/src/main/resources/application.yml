@@ -1,0 +1,46 @@
+server:
+  port: 8200
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#启用feign的断路器
+feign:
+  hystrix:
+    enabled: true
+spring:
+  #设置 freemarker作为视图解析器
+  freemarker:
+    enabled: true  #启用
+    template-loader-path: classpath:/templates   #静态页面位置
+    expose-request-attributes: true
+    expose-session-attributes: true
+    expose-spring-macro-helpers: true
+    cache: false
+    suffix: .html
+    content-type: text/html
+    settings:
+      datetime_format: yyyy-MM-dd HH:mm:ss
+      date_format: yyyy-MM-dd
+      number_format: #.##
+  application:
+    name: user-service
+  sleuth:
+    sampler:  #取样率
+      probability: 1
+  zipkin:
+    sender:
+      type: rabbit
+#配置连接rabbitmq
+  rabbitmq:
+    listener:
+      direct:
+        retry:
+          enabled: true #是否启用发布重试
+      simple:
+        retry:
+          enabled: true #是否开启消费者模式
+    host: 192.168.92.128
+    port: 5672
+    username: guest
+    password: guest

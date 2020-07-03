@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common_service/common_service.iml" filepath="$PROJECT_DIR$/common_service/common_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config_service/config_service.iml" filepath="$PROJECT_DIR$/config_service/config_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config_service/config_service (1).iml" filepath="$PROJECT_DIR$/config_service/config_service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka_service/eurekaserver.iml" filepath="$PROJECT_DIR$/eureka_service/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order_service/order_service.iml" filepath="$PROJECT_DIR$/order_service/order_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_service/product_service.iml" filepath="$PROJECT_DIR$/product_service/product_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user_service/user_service.iml" filepath="$PROJECT_DIR$/user_service/user_service.iml" />
+    </modules>
+  </component>
+</project>
